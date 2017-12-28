@@ -8,9 +8,5 @@ class Url < ApplicationRecord
 		@short_url = (0...7).map{ range.sample }.join
 		self.short_url = @short_url
 	end
-
-	def counter
-		self.click_count = 0
-	end
-
+	
 end
